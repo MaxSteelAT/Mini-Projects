@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - HTML Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class= "formulario">
+  <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+    <h1>Formulario</h1>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="title" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+   <!-- <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="body" rows="1" cols="20" required></textarea>
+    </div>
+-->
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="100" required>
+    </div>
+    <!-- Selector -->
+    <div>
+      <label for="country">Choose your country:</label>
+      <select id="country" name="country" required>
+        <option value="">-- Selecciona tu país --</option>
+        <option value="usa">USA</option>
+        <option value="ca">Canada</option>
+        <option value="mx" selected>Mexico</option>
+      </select>
+
+    </div>
+
+    <!-- Checkbox -->
+    <div>
+      <label for="subscribe">Subscribe to newsletter:</label>
+      <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    </div>
+
+    <!-- Radio buttons -->
+    <div>
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other" required>
+      <label for="other">Other</label>
+
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
