@@ -1,0 +1,42 @@
+<div class="form-container">
+    <h2>Formulario de Registro</h2>
+    <form id="complexForm">
+      <div class="form-group">
+        <label for="age">Edad:</label>
+        <input type="number" id="age" placeholder="Ingresa tu edad">
+        <div class="error" id="ageError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="salary">Salario:</label>
+        <input type="number" id="salary" placeholder="Ingresa tu salario">
+        <div class="error" id="salaryError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="country">País:</label>
+        <select id="country">
+          <option value="">Selecciona tu país</option>
+          <option value="mx" selected>México</option>
+          <option value="us">Estados Unidos</option>
+          <option value="ca">Canadá</option>
+        </select>
+        <div class="error" id="countryError"></div>
+      </div>
+
+      <!-- <div class="form-group">
+        <label>Género:</label>
+        <input type="radio" name="gender" value="male" id="male"> Hombre
+        <input type="radio" name="gender" value="female" id="female"> Mujer
+        <div class="error" id="genderError"></div>
+      </div> -->
+
+      <div class="form-group">
+        <input type="checkbox" id="terms"> Acepto los términos y condiciones
+        <div class="error" id="termsError"></div>
+      </div>
+
+      <button type="button" id="submitBtn">Enviar</button>
+      <div id="result" class="result"></div>
+    </form>
+  </div>
